@@ -1,0 +1,45 @@
+# Cloudflare Pages — response headers
+# Docs: https://developers.cloudflare.com/pages/configuration/headers/
+
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), interest-cohort=()
+  X-DNS-Prefetch-Control: off
+
+  # ---- Content Security Policy ----
+  # Leave commented until you've added /theme.js and removed the two inline
+  # <script> blocks from index.html (see notes). Then uncomment this ONE line.
+  #
+  # Content-Security-Policy: default-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; img-src 'self' data: https://cdn.simpleicons.org; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self'; connect-src 'self'; upgrade-insecure-requests
+  #
+  # If you'd rather KEEP the inline scripts instead of using theme.js, swap
+  # "script-src 'self'" above for "script-src 'self' 'unsafe-inline'".
+  # It still adds every other protection; it only weakens script injection
+  # defense, which is near-zero risk on a static page with no user input.
+  #
+  # When you later self-host the fonts and icons, you can tighten the whole
+  # thing to: default-src 'self'; img-src 'self' data'; object-src 'none'; ...
+  # and drop the googleapis / gstatic / simpleicons exceptions entirely.
+
+# ---- Caching for content-stable assets ----
+# These files don't change content, so cache them hard.
+/assets/favicon.svg
+  Cache-Control: public, max-age=604800
+/assets/favicon-32.png
+  Cache-Control: public, max-age=604800
+/assets/apple-touch-icon.png
+  Cache-Control: public, max-age=604800
+/assets/icon-192.png
+  Cache-Control: public, max-age=2592000
+/assets/icon-512.png
+  Cache-Control: public, max-age=2592000
+/assets/logo.svg
+  Cache-Control: public, max-age=2592000
+/assets/og.png
+  Cache-Control: public, max-age=86400
+
+# Note: HTML and style.css are intentionally left on Cloudflare's defaults
+# (revalidated each load) so edits go live immediately. If you ever add a
+# version hash to the CSS filename, you can cache it hard like the icons.

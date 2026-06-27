@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>René J. Peter — Full-Stack Website & Systems Engineer</title>
+    <meta name="description" content="René J. Peter — full-stack website and systems engineer based in Trinidad & Tobago. Backend, systems work, and applied cryptography, with 20+ years building for the web.">
+    <link rel="canonical" href="https://renepeter.com/">
+
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fafaf9">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0a0a0a">
+
+    <!-- favicons -->
+    <link rel="icon" href="./assets/favicon-32.png" type="image/png">
+    <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="René J. Peter">
+    <meta property="og:title" content="René J. Peter — Full-Stack Website & Systems Engineer">
+    <meta property="og:description" content="Backend, systems work, and applied cryptography. 20+ years building for the web, from Trinidad & Tobago.">
+    <meta property="og:url" content="https://renepeter.com/">
+    <meta property="og:image" content="https://renepeter.com/assets/og.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="René J. Peter — Full-Stack Website & Systems Engineer">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="René J. Peter — Full-Stack Website & Systems Engineer">
+    <meta name="twitter:description" content="Backend, systems work, and applied cryptography. 20+ years building for the web, from Trinidad & Tobago.">
+    <meta name="twitter:image" content="https://renepeter.com/assets/og.png">
+
+    <!-- set theme before paint to avoid flash -->
+    <script src="./assets/theme.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <link href="./assets/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header>
+      <nav class="nav wrap" aria-label="Primary">
+        <a href="/" class="monogram" aria-label="René Peter — home">RP</a>
+        <div class="nav-links">
+          <a href="#top">home</a>
+          <a href="#about">about</a>
+          <a href="#skills">skills</a>
+          <a href="#work">work</a>
+          <a href="#contact">contact</a>
+        </div>
+        <div class="nav-right">
+          <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <a href="https://github.com/zbcdo" rel="me noreferrer noopener" target="_blank" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.39 1.24-3.23-.13-.3-.54-1.53.11-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.23 0 4.63-2.81 5.65-5.49 5.95.43.37.82 1.1.82 2.22v3.29c0 .32.21.7.82.58A12.01 12.01 0 0 0 24 12.5C24 5.87 18.63.5 12 .5z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/renejpeter/" rel="me noreferrer noopener" target="_blank" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.8 0 0 .78 0 1.74v20.52C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.74V1.74C24 .78 23.2 0 22.22 0z"/></svg>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <a id="top"></a>
+    <main id="main">
+      <section class="section hero">
+        <div class="wrap">
+          <p class="eyebrow">~ rené.peter — engineer<span class="cursor" aria-hidden="true"></span></p>
+          <h1>
+            <span class="line">Hi, I'm René,</span>
+            <span class="line">a full-stack</span>
+            <span class="line outline">website engineer.</span>
+          </h1>
+          <p class="hero-sub">
+            Backend Web Developer<span class="slash">/</span>Systems Engineer
+          </p>
+        </div>
+      </section>
+
+      <section id="about" class="section" aria-labelledby="about-name">
+        <div class="wrap">
+          <p class="sec-label">// who am i</p>
+          <div class="about-grid">
+            <div>
+            <h2 class="about-name" id="about-name">René J. Peter</h2>
+            <p class="about-tag">
+              <span>20+ years building software</span>
+              <span>Backend, performance &amp; security</span>
+            </p>
+            </div>
+            <div class="about-body">
+            <p>I'm a full-stack website and systems engineer with over 20 years behind me, based in Trinidad &amp; Tobago. I started in hardware and support and worked my way across the whole stack — building and securing web and mobile apps, standing up the infrastructure they run on, and keeping them fast and reliable once they're live.</p>
+            <p>Most of my work is on the backend: secure REST APIs, content systems, and applied cryptography when a problem calls for it. Lately I've been building systems tooling in Go and Rust.</p>
+            <p>Away from the keyboard I cook a lot, keep a small garden, and can lose an afternoon to a good webnovel.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="wrap">
+          <p class="sec-label">// skills &amp; experience</p>
+          <h2>What I work with</h2>
+          <p class="skills-intro">
+            I build content management systems and RESTful APIs with <strong>Laravel</strong> and <strong>Go</strong>, backed by SQLite or <strong>PostgreSQL</strong>. Microservices, systems tooling, and scripts in <strong>Python</strong>, Go, <strong>Rust</strong>, and Bash. On the frontend: plain HTML, CSS, and JavaScript/TypeScript, plus React, <strong>NextJS</strong>, AlpineJS, and <strong>TailwindCSS</strong>.
+          </p>
+
+          <ul class="grid">
+            <li class="tile"><img src="https://cdn.simpleicons.org/php/000000" alt="" aria-hidden="true"><span>PHP</span></li>
+            <li class="tile"><img src="https://cdn.simpleicons.org/laravel/000000" alt="" aria-hidden="true"><span>Laravel</span></li>
+            <li class="tile"><img src="https://cdn.simpleicons.org/wordpress/000000" alt="" aria-hidden="true"><span>WordPress</span></li>
+            <li class="tile"><img src="https://cdn.simpleicons.org/go/000000" alt="" aria-hidden="true"><span>Go</span></li>
+            <li class="tile"><img src="https://cdn.simpleicons.org/rust/000000" alt="" aria-hidden="true"><span>Rust</span></li>
+            <li class="tile"><img src="https://cdn.simpleicons.org/python/000000" alt="" aria-hidden="true"><span>Python</span></li>
+            <li class="tile"><img src="https://cdn.simpleicons.org/sqlite/000000" alt="" aria-hidden="true"><span>SQLite</span></li>
+            <li class="tile"><img src="https://cdn.simpleicons.org/postgresql/000000" alt="" aria-hidden="true"><span>PostgreSQL</span></li>
+            <li class="tile"><img src="https://cdn.simpleicons.org/tailwindcss/000000" alt="" aria-hidden="true"><span>TailwindCSS</span></li>
+            <li class="tile"><img src="https://cdn.simpleicons.org/javascript/000000" alt="" aria-hidden="true"><span>JavaScript</span></li>
+            <li class="tile"><img src="https://cdn.simpleicons.org/typescript/000000" alt="" aria-hidden="true"><span>TypeScript</span></li>
+            <li class="tile"><img src="https://cdn.simpleicons.org/nextdotjs/000000" alt="" aria-hidden="true"><span>NextJS</span></li>
+            <li class="tile"><img src="https://cdn.simpleicons.org/react/000000" alt="" aria-hidden="true"><span>React Native</span></li>
+            <li class="tile"><img src="https://cdn.simpleicons.org/alpinedotjs/000000" alt="" aria-hidden="true"><span>AlpineJS</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="work" class="section">
+        <div class="wrap">
+          <p class="sec-label">// selected work</p>
+          <h2>What I'm building</h2>
+
+          <div class="project">
+            <div class="project-head">
+            <h3 class="project-name">sshare</h3>
+            <span class="status"><span class="dot" aria-hidden="true"></span>in progress</span>
+            </div>
+            <p class="project-desc">
+            End-to-end encrypted secret-sharing tool. Secrets are encrypted in the browser and <strong>the key never reaches the server</strong>, so it only ever stores ciphertext it can't read. Built the first version in Laravel; now rewriting it in <strong>Rust</strong>, in the open.
+            </p>
+            <p class="project-tags">Rust · applied cryptography · self-hosted</p>
+            <p class="project-foot">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.39 1.24-3.23-.13-.3-.54-1.53.11-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.23 0 4.63-2.81 5.65-5.49 5.95.43.37.82 1.1.82 2.22v3.29c0 .32.21.7.82.58A12.01 12.01 0 0 0 24 12.5C24 5.87 18.63.5 12 .5z"/></svg>
+            Public repo opening soon
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="wrap">
+          <p class="sec-label">// get in touch</p>
+          <h2>Let's talk.</h2>
+          <div class="contact-inner">
+            <p class="contact-copy">Open to interesting backend and systems work. Drop me an email, or reach out on GitHub or LinkedIn.</p>
+            <address class="btn-row">
+              <a class="btn" href="mailto:hello@renepeter.com">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M2 5.5A2.5 2.5 0 0 1 4.5 3h15A2.5 2.5 0 0 1 22 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 18.5v-13Zm2.2-.5 7.8 5.85L19.8 5H4.2ZM20 6.7l-7.4 5.55a1 1 0 0 1-1.2 0L4 6.7v11.8c0 .28.22.5.5.5h15a.5.5 0 0 0 .5-.5V6.7Z"/></svg>
+                Email
+              </a>
+              <a class="btn" href="https://github.com/zbcdo" rel="me noreferrer noopener" target="_blank">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.39 1.24-3.23-.13-.3-.54-1.53.11-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.23 0 4.63-2.81 5.65-5.49 5.95.43.37.82 1.1.82 2.22v3.29c0 .32.21.7.82.58A12.01 12.01 0 0 0 24 12.5C24 5.87 18.63.5 12 .5z"/></svg>
+                GitHub
+              </a>
+              <a class="btn" href="https://www.linkedin.com/in/renejpeter/" rel="me noreferrer noopener" target="_blank">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.8 0 0 .78 0 1.74v20.52C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.74V1.74C24 .78 23.2 0 22.22 0z"/></svg>
+                LinkedIn
+              </a>
+            </address>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="foot wrap">
+        <span>© 2026 René Peter</span>
+        <span>built &amp; shipped from T&amp;T</span>
+      </div>
+    </footer>
+
+  </body>
+</html>
